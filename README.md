@@ -12,15 +12,18 @@ This is the code to be burnt on the ESP32CAM via the MB-Board.
 
 Just put any static IP address here for your default gateway and change the same in `face_detection_attendance.py`. 
 Edit:
+```
 IPAddress local_IP(192, 168, 100, 184);
 IPAddress gateway(192, 168, 100, 1);
 IPAddress subnet(255, 255, 0, 0);
+```
 
 Burn it on the board and afterwards just put the CAM anywhere powered by USB cable. 
 
 Put whatever pictures (with name of person) you want to identify faces with in `image_folder` created by `install_facecam.sh`. 
 
 **Running the app**
+
 Run the `run_facecam.sh` and until and unless you press 'q' it will keep on running.
 
 Both ESP32CAM and laptop need to be on same network. 
